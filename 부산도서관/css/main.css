@@ -1,0 +1,100 @@
+@charxet "utf-8";
+
+#wrap{}
+/* 헤더영역 */
+#header{position: relative;}
+/* hTop 유틸 영역 */
+.hTop{width: 100%; height: 38px; background: #3834cb;}
+.hTop .utill{width: 1200px; margin: 0 auto;}
+/* 유틸 left */
+.hTop .left{float: left;}
+.hTop .left li{display: inline-block; border-right: 1px dotted #bbb; 
+    margin-right: 15px; padding-right: 15px;}
+.hTop .left li:first-child{border-left: 1px dotted #bbb; padding-left: 15px;}
+/* 유틸 right */
+.hTop .right{float: right;}
+.hTop .right li{display: inline-block; border-left: 1px dotted #bbb; 
+                margin-left: 15px; padding-left: 15px;}
+.hTop .utill li a{ font-size: 13px; line-height: 38px; color: #fff;}
+/* 전체 삼선메뉴 */
+.hTop .right .all{border-left: none; padding-left: 0;}
+.hTop .right .all a{display: block; text-indent: -9999px;
+                        width: 38px; height: 38px;
+                        background: url(../img/all.jpg) no-repeat;}
+
+/* gnb 메뉴 영역  */
+.gnb{width: 100%; height: 80px; background: #fff;}
+.gnb .inner{width: 1200px; margin: 0 auto;}
+.gnb .logo{float: left; padding-top: 23px;}
+/* 메인메뉴 */
+.gnb .mainMenu{float: right;}
+.gnb .mainMenu>li{float: left; text-align: center;}
+.gnb .mainMenu>li>a{display: block; font-size: 18px; font-weight: 600;
+                             padding: 30px 39px;}
+ /* 서브메뉴 영역 */
+.gnb .subMenu{width: 159px; height: 360px; display: none;
+                    border-left: 1px solid #666;}
+.gnb .subMenu.last{border-right: 1px solid #666;}
+.gnb .subMenu li{text-align: center; line-height: 34px; }
+.gnb .subMenu li a{font-size: 14px; color: #666; z-index: 10; position: relative;}
+.gnb .subMenu li a:before{content: ""; display: inline-block;
+                                position: absolute; bottom: 0; left: 0;
+                                width: 0; height: 10px; background: #cecdff;
+                                transition: 0.2s all; z-index: -1;}
+/* 마우스 하버시 */
+.gnb .mainMenu>li:hover>a{color: #3834cb;}
+.gnb .subMenu li:hover a:before{width: 100%;}
+/* 서브배경 영역 */
+.subBg{width: 100%; height: 360px; background:#fff; display: none;
+    border-top: 1px solid #666; border-bottom: 1px solid #666;} 
+.subBg::before{display: block; content: ""; position: absolute;
+                   top: 119px; left: 359px; width: 238px; height: 100%;
+                   background: url(../img/clock.jpg) no-repeat;}
+
+/* 메인비주얼 영역 */
+#mainVisual{width: 100%; height: 450px; position: relative;}
+/* 검색창 영역 */
+.search{position: absolute; bottom: 106px; left: 360px;}
+fieldset{overflow: hidden; position:relative;
+          width: 608px; margin: 30px 0 45px;
+          padding: 17px 70px 17px 25px;
+          box-sizing: border-box;
+          background: #fff; border: 0;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);}
+fieldset>div{float: left;}
+legend{overflow: hidden; position: absolute; top: 0; left: 0;}
+.selectBox{display: inline-block; position: relative;
+             left: 0; width: 145px; height: 36px;}
+.selectBox:before{content: ""; position: absolute;
+                       top: 50%; right: 10px; margin-top: -3px; 
+                       border: 1px solid transparent; border-top-color: #444;}
+
+.selectBox select{width: 100%; height: 100%; padding: 5px;
+                     border: none; appearance: none;
+                     font-size: 16px; font-weight: 600; color: #333;
+                     background: url(../img/arrow.png) no-repeat 95% 50%;}
+
+.selectBox select option{display: block; white-space: nowrap;
+                               padding: 0 4px 1px; }
+
+.wordBox{position: relative; width: 320px; height: 36px; 
+            margin-left: 15px; padding-left: 25px;
+            line-height: 36px; border-left: 1px solid #ddd;}
+
+.wordBox label{position: absolute; top: 0; left: 35px;
+                    font-size: 16px; display: block; visibility: hidden;}
+.wordBox input{width: 100%; height: 100%; box-sizing: border-box;
+                    border: none; font-size: 16px;}
+
+.schBtn{display: block; text-indent: -9999px;
+          width: 70px; height: 100%;
+          position: absolute; top: 0; right: 0;
+          background: url(../img/search.jpg) no-repeat;}
+
+
+
+
+/* 컨테이너 영역 */
+#container{}
+/* 푸터 영역 */
+#footer{}

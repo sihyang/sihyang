@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>rom&amp;and</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- slick 준비 -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="script/main.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="TopPop">
+            <div class="inner"><a href="#">
+                <p>가입만 해도 즉시 사용 가능한 2,000원 적립 쿠폰 증정</p>
+                <a href="#" class="Popclose">닫기</a>
+            </a></div><!--inner-->
+        </div><!--TopPop-->
+        <header id="header">
+            <nav class="gnb">
+                <div class="subBg"></div><!--subBg-->
+                <div class="inner">
+                    <h1 class="logo"><a href="#"><img src="img/logo.png" alt="롬앤"></a></h1><!--logo-->
+                        <ul class="mainMenu cf">
+                            <li><a href="#">BRAND</a>
+                                <ul class="subMenu">
+                                    <li><a href="#">롬앤소식</a></li>
+                                    <li><a href="#">STORE</a></li>
+                                </ul><!--subMenu-->
+                            </li>
+                            <li><a href="#">SHOP</a>
+                                <ul class="subMenu">
+                                    <li><a href="#">BASE</a></li>
+                                    <li><a href="#">EYE</a></li>
+                                    <li><a href="#">LIP</a></li>
+                                    <li><a href="#">NAIL</a></li>
+                                    <li><a href="#">TOOL</a></li>
+                                    <li><a href="#">SET</a></li>
+                                    <li><a href="#">EDITION</a></li>
+                                </ul><!--subMenu-->
+                            </li>
+                            <li><a href="#">COMMUNITY</a>
+                                <ul class="subMenu">
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">Q&amp;A</a></li>
+                                    <li><a href="#">REVIEW</a></li>
+                                </ul><!--subMenu-->
+                            </li>
+                            <li><a href="#">EVENT</a>
+                                <ul class="subMenu">
+                                    <li><a href="#">이벤트</a></li>
+                                    <li><a href="#">룩튜도리얼</a></li>
+                                </ul><!--subMenu-->
+                            </li>
+                        </ul><!--mainMenu-->
+                    <div class="utill">
+                        <a href="#" class="search">검색</a>
+                        <a href="#" class="login">로그인</a>
+                        <a href="#" class="cart">장바구니</a>
+                    </div><!--utill-->
+            </div><!--inner-->
+        </nav><!--gnb-->
+        </header><!--header-->
+        <div id="mainSlider" class="cf">
+                <div><img src="img/slide1.jpg" alt="글래스팅 워터 글로스"></div>
+                <div><img src="img/slide2.jpg" alt="클리어 커버쿠션"></div>
+                <div><img src="img/slide3.jpg" alt="베러 댄 치크"></div>
+        </div><!--mainSlider-->
+        <script type="text/javascript"> /*-- 슬라이드 js --*/
+            $('#mainSlider').slick({
+            infinite: true , /*이미지 끝나면 맨 앞으로 이동*/
+            slidesToShow: 1, /*화면에 보여질 이미지 갯수*/
+            slidesToScroll: 1, /*스크롤 이동할 이미지 갯수*/
+            autoplay: true, /*자동슬라이드*/
+            autoplaySpeed: 2000, /*슬라이드 시간 2초*/
+            dots: true /*pager*/
+        });
+        </script> 
+        <div id="container">
+            <div class="cont1">
+                <div class="inner">
+                    <div class="tabBtn">
+                        <ul class="cf">
+                            <li class="active"><a href="#">BEST</a></li>
+                            <li><a href="#">NEW</a></li>
+                        </ul>
+                    </div><!--tabBtn-->
+                    <div class="tabCont">
+                        <ul class="best cf">
+                            <li class="best1"><a href="#">
+                                <div class="photo">
+                                    <img src="img/best1.jpg" alt="베스트1">
+                                    <img src="img/best1_on.jpg" alt="베스트1_on" class="on">
+                                </div><!--photo-->
+                                <div class="info">
+                                    <div class="name">롬앤 쥬시 래스팅 틴트</div><!--name-->
+                                    <div class="price">
+                                        <p class="origin">13,000원 </p>
+                                        <p>8,900원</p>
+                                    </div><!--price-->
+                                    <div class="tag">
+                                        <p class="hit">HIT</p>
+                                        <p class="best">BEST</p>
+                                    </div>
+                                </div><!--info-->
+                            </a></li><!----best2---->
+                            <li class="best2"><a href="#">
+                                <div class="photo">
+                                    <img src="img/best2.jpg" alt="베스트2">
+                                    <img src="img/best2_on.jpg" alt="베스트2_on" class="on">
+                                </div><!--photo-->
+                                <div class="info">
+                                    <div class="name">롬앤 제로 매트 립스틱</div><!--name-->
+                                    <div class="price">
+                                        <p class="origin">12,000원 </p>
+                                        <p>8,900원</p>
+                                    </div><!--price-->
+                                    <div class="tag">
+                                        <p class="hit">HIT</p>
+                                        <p class="best">BEST</p>
+                                    </div>
+                                </div><!--info-->
+                            </a></li><!----best2---->
+
+                            <li class="best3"><a href="#">
+                                <div class="photo">
+                                    <img src="img/best3.jpg" alt="베스트3">
+                                    <img src="img/best3_on.jpg" alt="베스트3_on" class="on">
+                                </div><!--photo-->
+                                <div class="info">
+                                    <div class="name">롬앤 무드 페블 네일</div><!--name-->
+                                    <div class="price">
+                                        <p class="origin">8,000원 </p>
+                                        <p>6,400원</p>
+                                    </div><!--price-->
+                                    <div class="tag">
+                                        <p class="hit">HIT</p>
+                                        <p class="best">BEST</p>
+                                    </div>
+                                </div><!--info-->
+                            </a></li><!----best3---->
+
+                            <li class="best4"><a href="#">
+                                <div class="photo">
+                                    <img src="img/best4.jpg" alt="베스트4">
+                                    <img src="img/best4_on.jpg" alt="베스트4_on" class="on">
+                                </div><!--photo-->
+                                <div class="info">
+                                    <div class="name">롬앤 베러 댄 팔레트 #비밀정원</div><!--name-->
+                                    <div class="price">
+                                        <p class="origin">30,000원 </p>
+                                        <p>22,900원</p>
+                                    </div><!--price-->
+                                    <div class="tag">
+                                        <p class="hit">HIT</p>
+                                        <p class="best">BEST</p>
+                                    </div>
+                                </div><!--info-->
+                            </a></li><!----best4---->
+
+                            <li class="best5"><a href="#">
+                                <div class="photo">
+                                    <img src="img/best5.jpg" alt="베스트5">
+                                    <img src="img/best5_on.jpg" alt="베스트5_on" class="on">
+                                </div><!--photo-->
+                                <div class="info">
+                                    <div class="name">롬앤 클리어 커버 쿠션</div><!--name-->
+                                    <div class="price">
+                                        <p class="origin">25,000원 </p>
+                                        <p>16,900원</p>
+                                    </div><!--price-->
+                                    <div class="tag">
+                                        <p class="hit">HIT</p>
+                                        <p class="best">BEST</p>
+                                    </div>
+                                </div><!--info-->
+                            </a></li><!----best5---->
+
+                            <li class="best6"><a href="#">
+                                <div class="photo">
+                                    <img src="img/best6.jpg" alt="베스트6">
+                                    <img src="img/best6_on.jpg" alt="베스트6_on" class="on">
+                                </div><!--photo-->
+                                <div class="info">
+                                    <div class="name">롬앤 글래스팅 워터 글로스</div><!--name-->
+                                    <div class="price">
+                                        <p class="origin">13,000원 </p>
+                                        <p>8,900원</p>
+                                    </div><!--price-->
+                                    <div class="tag">
+                                        <p class="hit">HIT</p>
+                                        <p class="best">BEST</p>
+                                    </div>
+                                </div><!--info-->
+                            </a></li><!----best6---->
+
+                            <li class="best7"><a href="#">
+                                <div class="photo">
+                                    <img src="img/best7.jpg" alt="베스트7">
+                                    <img src="img/best7_on.jpg" alt="베스트7_on" class="on">
+                                </div><!--photo-->
+                                <div class="info">
+                                    <div class="name">롬앤 제로 매트 립스틱</div><!--name-->
+                                    <div class="price">
+                                        <p class="origin">12,000원 </p>
+                                        <p>8,900원</p>
+                                    </div><!--price-->
+                                    <div class="tag">
+                                        <p class="hit">HIT</p>
+                                        <p class="best">BEST</p>
+                                    </div>
+                                </div><!--info-->
+                            </a></li><!----best7---->
+
+                            <li class="best8"><a href="#">
+                                <div class="photo">
+                                    <img src="img/best8.jpg" alt="베스트8">
+                                    <img src="img/best8_on.jpg" alt="베스트8_on" class="on">
+                                </div><!--photo-->
+                                <div class="info">
+                                    <div class="name">롬앤 한올 플랫 브로우</div><!--name-->
+                                    <div class="price">
+                                        <p class="origin">11,000원 </p>
+                                        <p>7,900원</p>
+                                    </div><!--price-->
+                                    <div class="tag">
+                                        <p class="hit">HIT</p>
+                                        <p class="best">BEST</p>
+                                    </div>
+                                </div><!--info-->
+                            </a></li><!----best8---->
+
+                            <li class="best9"><a href="#">
+                                <div class="photo">
+                                    <img src="img/best9.jpg" alt="베스트9">
+                                    <img src="img/best9_on.jpg" alt="베스트9_on" class="on">
+                                </div><!--photo-->
+                                <div class="info">
+                                    <div class="name">롬앤 쥬시 래스팅 틴트</div><!--name-->
+                                    <div class="price">
+                                        <p class="origin">12,000원 </p>
+                                        <p>8,900원</p>
+                                    </div><!--price-->
+                                    <div class="tag">
+                                        <p class="hit">HIT</p>
+                                        <p class="best">BEST</p>
+                                    </div>
+                                </div><!--info-->
+                            </a></li><!----best9---->
+
+                            <li class="best10"><a href="#">
+                                <div class="photo">
+                                    <img src="img/best10.jpg" alt="베스트10">
+                                    <img src="img/best10_on.jpg" alt="베스트10_on" class="on">
+                                </div><!--photo-->
+                                <div class="info">
+                                    <div class="name">롬앤 베러 댄 매트 쿠션</div><!--name-->
+                                    <div class="price">
+                                        <p class="origin">23,000원 </p>
+                                        <p>12,900원</p>
+                                    </div><!--price-->
+                                    <div class="tag">
+                                        <p class="hit">HIT</p>
+                                        <p class="best">BEST</p>
+                                    </div>
+                                </div><!--info-->
+                            </a></li><!----best10---->
+                        </ul><!------best------>
+                        <ul class="new cf">
+                            <li class="new1"><a href="#">
+                                <div class="photo">
+                                    <img src="img/new1.jpg" alt="신제품">
+                                    <img src="img/new1_on.jpg" alt="신제품_on" class="on">
+                                </div><!--photo-->
+                                <div class="info">
+                                    <div class="name">롬앤 쥬시 래스팅 틴트</div><!--name-->
+                                    <div class="price">
+                                        <p class="origin">13,000원 </p>
+                                        <p>8,900원</p>
+                                    </div><!--price-->
+                                    <div class="tag">
+                                        <p class="hit">HIT</p>
+                                        <p class="best">BEST</p>
+                                    </div>
+                                </div><!--info-->
+                            </a></li><!----new2---->
+                            <li class="new2"><a href="#">
+                                <div class="photo">
+                                    <img src="img/new2.jpg" alt="new">
+                                    <img src="img/new2_on.jpg" alt="new_on" class="on">
+                                </div><!--photo-->
+                                <div class="info">
+                                    <div class="name">롬앤 제로 매트 립스틱</div><!--name-->
+                                    <div class="price">
+                                        <p class="origin">12,000원 </p>
+                                        <p>8,900원</p>
+                                    </div><!--price-->
+                                    <div class="tag">
+                                        <p class="hit">HIT</p>
+                                        <p class="best">BEST</p>
+                                    </div>
+                                </div><!--info-->
+                            </a></li><!----new2---->
+
+                            <li class="new3"><a href="#">
+                                <div class="photo">
+                                    <img src="img/new3.jpg" alt="new">
+                                    <img src="img/new3_on.jpg" alt="new_on" class="on">
+                                </div><!--photo-->
+                                <div class="info">
+                                    <div class="name">롬앤 무드 페블 네일</div><!--name-->
+                                    <div class="price">
+                                        <p class="origin">8,000원 </p>
+                                        <p>6,400원</p>
+                                    </div><!--price-->
+                                    <div class="tag">
+                                        <p class="hit">HIT</p>
+                                        <p class="best">BEST</p>
+                                    </div>
+                                </div><!--info-->
+                            </a></li><!----new3---->
+
+                            <li class="new4"><a href="#">
+                                <div class="photo">
+                                    <img src="img/new4.jpg" alt="new">
+                                    <img src="img/new4_on.jpg" alt="new_on" class="on">
+                                </div><!--photo-->
+                                <div class="info">
+                                    <div class="name">롬앤 베러 댄 팔레트 #비밀정원</div><!--name-->
+                                    <div class="price">
+                                        <p class="origin">30,000원 </p>
+                                        <p>22,900원</p>
+                                    </div><!--price-->
+                                    <div class="tag">
+                                        <p class="hit">HIT</p>
+                                        <p class="best">BEST</p>
+                                    </div>
+                                </div><!--info-->
+                            </a></li><!----best4---->
+
+                            <li class="new5"><a href="#">
+                                <div class="photo">
+                                    <img src="img/new5.jpg" alt="new">
+                                    <img src="img/new5_on.jpg" alt="new_on" class="on">
+                                </div><!--photo-->
+                                <div class="info">
+                                    <div class="name">롬앤 클리어 커버 쿠션</div><!--name-->
+                                    <div class="price">
+                                        <p class="origin">25,000원 </p>
+                                        <p>16,900원</p>
+                                    </div><!--price-->
+                                    <div class="tag">
+                                        <p class="hit">HIT</p>
+                                        <p class="best">BEST</p>
+                                    </div>
+                                </div><!--info-->
+                            </a></li><!----new5---->
+
+                            <li class="new6"><a href="#">
+                                <div class="photo">
+                                    <img src="img/new6.jpg" alt="new">
+                                    <img src="img/new6_on.jpg" alt="new_on" class="on">
+                                </div><!--photo-->
+                                <div class="info">
+                                    <div class="name">롬앤 클리어 커버 쿠션</div><!--name-->
+                                    <div class="price">
+                                        <p class="origin">25,000원 </p>
+                                        <p>16,900원</p>
+                                    </div><!--price-->
+                                    <div class="tag">
+                                        <p class="hit">HIT</p>
+                                        <p class="best">BEST</p>
+                                    </div>
+                                </div><!--info-->
+                            </a></li><!----best6---->
+
+                            <li class="new7"><a href="#">
+                                <div class="photo">
+                                    <img src="img/new7.jpg" alt="new">
+                                    <img src="img/new7_on.jpg" alt="new_on" class="on">
+                                </div><!--photo-->
+                                <div class="info">
+                                    <div class="name">롬앤 클리어 커버 쿠션</div><!--name-->
+                                    <div class="price">
+                                        <p class="origin">25,000원 </p>
+                                        <p>16,900원</p>
+                                    </div><!--price-->
+                                    <div class="tag">
+                                        <p class="hit">HIT</p>
+                                        <p class="best">BEST</p>
+                                    </div>
+                                </div><!--info-->
+                            </a></li><!----new7---->
+
+                            <li class="new8"><a href="#">
+                                <div class="photo">
+                                    <img src="img/new8.jpg" alt="new">
+                                    <img src="img/new8_on.jpg" alt="new_on" class="on">
+                                </div><!--photo-->
+                                <div class="info">
+                                    <div class="name">롬앤 클리어 커버 쿠션</div><!--name-->
+                                    <div class="price">
+                                        <p class="origin">25,000원 </p>
+                                        <p>16,900원</p>
+                                    </div><!--price-->
+                                    <div class="tag">
+                                        <p class="hit">HIT</p>
+                                        <p class="best">BEST</p>
+                                    </div>
+                                </div><!--info-->
+                            </a></li><!----new8---->
+
+                            <li class="new9"><a href="#">
+                                <div class="photo">
+                                    <img src="img/new9.jpg" alt="new">
+                                    <img src="img/new9_on.jpg" alt="new_on" class="on">
+                                </div><!--photo-->
+                                <div class="info">
+                                    <div class="name">롬앤 클리어 커버 쿠션</div><!--name-->
+                                    <div class="price">
+                                        <p class="origin">25,000원 </p>
+                                        <p>16,900원</p>
+                                    </div><!--price-->
+                                    <div class="tag">
+                                        <p class="hit">HIT</p>
+                                        <p class="best">BEST</p>
+                                    </div>
+                                </div><!--info-->
+                            </a></li><!----new9---->
+
+                            <li class="new10"><a href="#">
+                                <div class="photo">
+                                    <img src="img/new10.jpg" alt="new">
+                                    <img src="img/new10_on.jpg" alt="new_on" class="on">
+                                </div><!--photo-->
+                                <div class="info">
+                                    <div class="name">롬앤 클리어 커버 쿠션</div><!--name-->
+                                    <div class="price">
+                                        <p class="origin">25,000원 </p>
+                                        <p>16,900원</p>
+                                    </div><!--price-->
+                                    <div class="tag">
+                                        <p class="hit">HIT</p>
+                                        <p class="best">BEST</p>
+                                    </div>
+                                </div><!--info-->
+                            </a></li><!----new10---->
+                        </ul><!------new------>
+                </div><!--tabCont-->
+                </div><!--inner-->
+                <script type="text/javascript">/*콘텐츠1 슬라이더*/
+                    $('.tabCont ul').slick({
+                    infinite: true , /*이미지 끝나면 맨 앞으로 이동*/
+                    slidesToShow: 5,
+                    slidesToScroll: 2,
+                    });
+                </script>
+            </div><!--cont1-->
+            <div class="cont2">
+                <div class="inner cf">
+                    <div class="v1">
+                    <div class="title">
+                        <h2>NEW LIP &amp; NAIL</h2>
+                        <p>롬앤에서 새롭게 선보이는 Next generation Vol.2 LIP & NAIL</p>
+                        <span></span>
+                    </div><!--title-->
+                   <div class="vlist">
+                       <ul class="cf">
+                           <li><a href="#"><iframe width="640" height="360" src="https://www.youtube.com/embed/yus1FmaYLZY?&autoplay=1&mute=1" frameborder="0" gesture="media" aallow="encrypted-media" allowfullscreen></iframe></a></li>
+                           <li><a href="#">
+                               <img src="img/vlip.jpg" alt="롬앤 블러 퍼지 틴트">
+                               <p class="txt">롬앤 블러 퍼지 틴트</p>
+                           </a></li>
+                           <li><a href="#">
+                            <img src="img/vnail.jpg" alt="롬앤 블러 퍼지 틴트">
+                            <p class="txt">롬앤 무드 페블 네일
+                            </p>
+                           </a></li>
+                       </ul>
+                   </div><!--vlist-->
+                    </div><!--v1-->
+                    <div class="v2">
+                        <div class="title">
+                            <h2>NEW 라인프렌즈 미니 에디션</h2>
+                            <p>작지만 강한 너만의 잠재력 TINY BUT MIGHTY!</p>
+                            <span></span>
+                        </div><!--title-->
+                       <div class="vlist">
+                           <ul class="cf">
+                               <li><a href="#"><iframe width="640" height="360"src="https://www.youtube.com/embed/o2w1wopfBt4?&autoplay=1&mute=1" frameborder="0" gesture="media" aallow="encrypted-media" allowfullscreen></iframe></a></li>
+                               <li><a href="#">
+                                   <img src="img/vline.jpg" alt="라인프렌즈 베러 댄 치크">
+                                   <p class="txt">라인프렌즈 베러 댄 치크</p>
+                               </a></li>
+                               <li><a href="#">
+                                <img src="img/vline2.jpg" alt="라인프렌즈 미니 에디션 SET">
+                                <p class="txt">라인프렌즈 미니 에디션 SET</p>
+                               </a></li>
+                           </ul>
+                       </div><!--vlist-->
+                        </div><!--v2-->
+                </div><!--inner-->
+            </div><!--cont2-->
+            <div class="cont3">
+                <div class="inner">
+                    <div class="look1">
+                        <div class="left">
+                            <h2>롬앤 X 한국문화재단</h2>
+                            <p>본연의 나를 침범하지 않는 아름다움<br>
+                            색감 윤기 선으로 이루어진 한복의 조화로움에서 영감을 얻었습니다.</p>
+                            <div class="more"><a href="#">
+                                자세히보기<i></i>
+                            </a></div><!--more-->
+                        </div><!--info-->
+                        <div class="right">
+                            <img src="img/hanbok.jpg" alt="한복프로젝트">
+                        </div><!--photo-->
+                    </div><!--look1-->
+                    <div class="look2">
+                        <div class="left">
+                            <img src="img/bake.jpg" alt="베이커리프로젝트">
+                        </div><!--left-->
+                        <div class="right">
+                            <h2>소비자 PICK 제로벨벳 꿀조합</h2>
+                            <p>따끈하게 #구운컬러 #가을컬러<br>
+                                롬앤 베이커리에서 당신의 가을을 책임질게요!</p>
+                            <div class="more"><a href="#">
+                                자세히보기<i></i>
+                            </a></div>
+                        </div><!--right-->
+                    </div><!--look2-->
+                </div><!--inner-->
+            </div><!--cont3-->
+            <div class="cont4">
+                <div class="inner">
+                    <h2>BEST REVIEW</h2>
+                    <div class="review">
+                        <ul class="cf">
+                            <li>
+                                <div class="photo"><img src="img/rev1.jpg" alt="리뷰1"></div>
+                                <div class="info">
+                                    <p class="name">롬앤 블러 퍼지 틴트</p>
+                                    <p class="txt">발림성도 GOOD! 케이스도 전보다 더<br>
+                                    이뻐져서 볼 때 마다 심쿵..♥</p>
+                                    <p class="user">멜*님</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="photo"><img src="img/rev2.jpg" alt="리뷰2"></div>
+                                <div class="info">
+                                    <p class="name">롬앤 무드 페블 네일</p>
+                                    <p class="txt">요즘 날씨에 바르기 딱 좋은 가을 가을한
+                                        컬러 넘나 취향저격이에요</p>
+                                    <p class="user">콩*이님</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="photo"><img src="img/rev3.jpg" alt="리뷰3"></div>
+                                <div class="info">
+                                    <p class="name">롬앤 베러 댄 씨리얼</p>
+                                    <p class="txt">붉은기가 싹 빠진 예쁜 브라운 음영 컬러를
+                                        담은 베러 댄 쉐입과 피카소의 특별한 만남</p>
+                                    <p class="user">홍*님</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="photo"><img src="img/rev4.jpg" alt="리뷰4"></div>
+                                <div class="info">
+                                    <p class="name">롬앤 베러 댄 아이즈</p>
+                                    <p class="txt">데일리용으로 딱이에요 발림성 지속력
+                                        모두 만족합니다! 강추! </p>
+                                    <p class="user">겟챠*님</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="remore"><a href="#">자세히보기</a></div><!--more-->
+                </div><!--inner-->
+            </div><!--cont4-->
+            <div class="cont5">
+                <div class="inner">
+                    <h2>@romandyou</h2>
+                    <div class="sns">
+                        <ul class="cf">
+                            <li><a href="#"><img src="img/sns1.jpg" alt="sns1"></a></li>
+                            <li><a href="#"><img src="img/sns2.jpg" alt="sns2"></a></li>
+                            <li><a href="#"><img src="img/sns3.jpg" alt="sns3"></a></li>
+                            <li><a href="#"><img src="img/sns4.jpg" alt="sns4"></a></li>
+                            <li><a href="#"><img src="img/sns5.jpg" alt="sns5"></a></li>
+                        </ul>
+                    </div><!--sns-->
+                </div><!--inner-->
+            </div><!--cont5-->
+        </div><!--container-->
+        <footer id="footer">
+                <div class="fTop">
+                        <div class="inner cf">
+                        <div class="fMenu">
+                            <ul class="cf">
+                                <li class="on"><a href="#">개인정보보호정책</a></li>
+                                <li><a href="#">이용약관동의</a></li>
+                                <li><a href="#">해외수출문의</a></li>
+                                <li><a href="#">마케팅/제휴문의</a></li>
+                                <li><a href="#">채용문의</a></li>
+                            </ul>
+                        </div><!--fMenu-->
+                        <div class="fsns">
+                            <ul>
+                                <li><a href="https://www.youtube.com/channel/UC2uKY1XseEBI5Gorsy2DRZg" target="_blank">
+                                    <img src="img/ytube.png" alt="유튜브">
+                                    <img src="img/ytube_on.png" alt="유튜브on" class="on">
+                                </a></li>
+                                <li><a href="https://www.instagram.com/romandyou/"  target="_blank">
+                                    <img src="img/insta.png" alt="인스타그램">
+                                    <img src="img/insta_on.png" alt="인스타그램on" class="on">
+                                </a></li>
+                                <li><a href="https://blog.naver.com/romandyou" target="_blank">
+                                    <img src="img/blog.png" alt="블로그">
+                                    <img src="img/blog_on.png" alt="블로그on" class="on">
+                                </a></li>
+                                <li><a href="https://www.facebook.com/romandyou"  target="_blank">
+                                    <img src="img/face.png" alt="페이스북">
+                                    <img src="img/face_on.png" alt="페이스북on" class="on">
+                                </a></li>
+                                <li><a href="https://pf.kakao.com/_RzWSu" target="_blank">
+                                    <img src="img/kakao.png" alt="카카오톡">
+                                    <img src="img/kakao_on.png" alt="카카오톡on" class="on">
+                                </a></li>
+                            </ul>
+                        </div><!--fsns-->
+                    </div><!--inner-->
+                </div><!--fTop-->
+                <div class="fBottom">
+                    <div class="inner cf">
+                        <div class="flogo"><img src="img/flogo.png" alt="롬앤"></div><!--fsns-->
+                        <div class="finfo">
+                            <span>(주) 아이패밀리SC 사업자등록번호 : 120-86-00633 통신판매신고번호 : 강남 제2927호<br>
+                            서울시 강남구 논현동 59-9  대표 김태욱, 김성현</span>
+                            <p class="copy">@2021 IFAMILY SC, CO.,LTD.ALL Right Reserved.</p>
+                        </div><!--finfo-->
+                        <div class="fcs">
+                            <p class="name">롬앤 고객센터</p>
+                            <p class="call">1670 - 2238</p>
+                            <p>평일 10:00 ~ 18:00</p>
+                            <p>(점심 12:20 ~ 13:30) 주말, 공휴일 휴무</p>
+                        </div>
+                    </div><!--inner-->
+                </div><!--fBottom-->
+        </footer><!--footer-->
+    </div><!--wrap-->
+    <!-- 상단으로 이동하기 버튼 -->
+    <div id="goTop"> 
+       <button><span></span>TOP</button>
+       <script>
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 300){
+                $('#goTop').show();
+            } else{
+                $('#goTop').hide();
+            }
+        });
+        $('#goTop').click(function(){
+            $('html, body').animate({scrollTop:0},400);
+            return false;
+        });
+        </script>
+    </div> 
+</body>
+</html>

@@ -1,0 +1,16 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+*{margin:0; padding:0;}
+body{font-size: 15px; line-height: 20px; font-family: 'Noto Sans KR', sans-serif;}
+/* =자간 속성=
+: 글자와 글자 사이의 간격
+{letter-spacing : 숫자}
+양수(+) : 글자 사이 간격이 넓어진다.
+음수(-) : 글자 사이 간격이 좁아진다. (0~1 소수점단위값 주로 사용. -0.5)
+ */
+a{text-decoration: none; color: #222;}
+ul, ol{list-style: none;}
+img{vertical-align: top; border: none;}
+address{font-style: normal;} /*기본 기울임*/
+
+.cf::after{display: block; content:""; clear: both;}}

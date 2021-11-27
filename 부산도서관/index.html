@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부산도서관</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="script/main.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="hTop cf">
+                <div class="utill">
+                    <ul class="left">
+                        <li><a href="#">도서관포털</a></li>
+                        <li><a href="#">전자도서관</a></li>
+                    </ul>
+                    <ul class="right cf">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">내서재</a></li>
+                        <li><a href="#">통합회원인증</a></li>
+                        <li class="all"><a href="#">전체메뉴</a></li>
+                    </ul>
+                </div><!--utill-->
+            </div><!--hTop-->
+            <nav class="gnb">
+                <div class="inner cf">
+                    <h1 class="logo"><a href="#"><img src="img/logo.png" alt="부산도서관"></a></h1>
+                    <ul class="mainMenu">
+                        <li><a href="#">대표도서관</a>
+                            <ul class="subMenu">
+                                <li><a href="#">대표도서관 역할</a></li>
+                                <li><a href="#">도서관정책</a></li>
+                                <li><a href="#">지역도서관 운영지원</a></li>
+                                <li><a href="#">지역도서관 분담수서</a></li>
+                                <li><a href="#">연구조사 자료실</a></li>
+                            </ul><!--subMenu-->
+                        </li>
+                        <li><a href="#">자료검색</a>
+                            <ul class="subMenu">
+                                <li><a href="#">소장자료</a></li>
+                                <li><a href="#">온라인콘텐츠</a></li>
+                                <li><a href="#">새로들어온책</a></li>
+                                <li><a href="#">대출이많은책</a></li>
+                                <li><a href="#">추천하는책</a></li>
+                                <li><a href="#">부산자료</a></li>
+                            </ul><!--subMenu-->
+                        </li>
+                        <li><a href="#">신청·예약</a>
+                            <ul class="subMenu">
+                                <li><a href="#">행사강좌</a></li>
+                                <li><a href="#">비치희망도서</a></li>
+                                <li><a href="#">지역서점바로대출</a></li>
+                                <li><a href="#">기증·납본</a></li>
+                                <li><a href="#">시설대관</a></li>
+                                <li><a href="#">자원봉사</a></li>
+                                <li><a href="#">책이름서비스</a></li>
+                                <li><a href="#">책나래서비스</a></li>
+                                <li><a href="#">책바다서비스</a></li>
+                            </ul><!--subMenu-->
+                        </li>
+                        <li><a href="#">독서문화</a>
+                            <ul class="subMenu">
+                                <li><a href="#">독서의달</a></li>
+                                <li><a href="#">도서관주간</a></li>
+                                <li><a href="#">독서회</a></li>
+                                <li><a href="#">전시행사</a></li>
+                            </ul><!--subMenu-->
+                        </li>
+                        <li><a href="#">열린공간</a>
+                            <ul class="subMenu">
+                                <li><a href="#">이달의행사</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">자주하는질문</a></li>
+                                <li><a href="#">사서에게물어보세요</a></li>
+                                <li><a href="#">부산시에바란다</a></li>
+                                <li><a href="#">설문조사</a></li>
+                                <li><a href="#">도서관홍보</a></li>
+                            </ul><!--subMenu-->
+                        </li>
+                        <li><a href="#">도서관안내</a>
+                            <ul class="subMenu last">
+                                <li><a href="#">인사말</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">조직업무</a></li>
+                                <li><a href="#">자료현황</a></li>
+                                <li><a href="#">시설현황</a></li>
+                                <li><a href="#">이용안내</a></li>
+                                <li><a href="#">찾아오시는길</a></li>
+                            </ul><!--subMenu--></li>
+                    </ul>
+                </div><!--inner-->
+            </nav><!--gnb-->
+            <div class="subBg"></div><!--subBg-->
+        </header><!--#header-->
+        <div id="mainVisual">
+            <div class="vImg">
+                <img src="img/visual.jpg" alt="비주얼이미지">
+            </div><!--vImg-->
+            <div class="search">
+                <form>
+                    <fieldset>
+                        <legend>자료검색</legend>
+                        <div class="selectBox">
+                            <select>
+                                <option value="TOTAL">통합자료검색</option>
+                                <option value="NAME">저자명</option>
+                                <option value="BOOK">도서명</option>
+                            </select>
+                        </div><!--selectBox-->
+                        <div class="wordBox">
+                            <label>검색어를 입력하세요.</label>
+                            <input type="text" style="color:#666;">
+                        </div><!--wordBox-->
+                        <a href="#" class="schBtn">검색</a>
+                    </fieldset>
+                </form>
+            </div><!--search-->
+        </div><!--mainVisual-->
+        <div id="container"></div><!--container-->
+        <footer id="footer"></footer><!--footer-->
+    </div><!--#wrap-->
+</body>
+</html>
