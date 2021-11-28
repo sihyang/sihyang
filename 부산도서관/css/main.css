@@ -83,6 +83,7 @@ legend{overflow: hidden; position: absolute; top: 0; left: 0;}
 
 .wordBox label{position: absolute; top: 0; left: 35px;
                     font-size: 16px; display: block; visibility: hidden;}
+
 .wordBox input{width: 100%; height: 100%; box-sizing: border-box;
                     border: none; font-size: 16px;}
 
@@ -91,10 +92,115 @@ legend{overflow: hidden; position: absolute; top: 0; left: 0;}
           position: absolute; top: 0; right: 0;
           background: url(../img/search.jpg) no-repeat;}
 
-
-
-
 /* 컨테이너 영역 */
 #container{}
+#container .inner{position: relative; width: 1200px; margin: 0 auto;}
+/* 콘텐츠1 퀵메뉴 영역 */
+.cont1{width: 1200px; height: 140px; margin-top: -100px;
+    background: #fff; z-index: 100;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 60px;}
+.cont1 ul{}
+.cont1 ul li{float: left; width: 199px; height: 140px; text-align: center;
+              border-right: 1px solid #ddd;}
+.cont1 ul .icon6{border-right: 0;}
+.cont1 ul li a{display: block; padding: 35px 77.5px 12px 77.5px;}
+.cont1 ul li a:before{content: ""; display: block; height: 45px;
+                          background-repeat: no-repeat;
+                          background-position: center;
+                          transition: all 0.6s;}
+.cont1 ul li span{font-weight: 500;}
+
+.cont1 ul .icon1 a:before{width: 45px; background-image: url(../img/icon1.png);}
+.cont1 ul .icon2 a:before{width: 46px; background-image: url(../img/icon2.png);}
+.cont1 ul .icon3 a:before{width: 34px; background-image: url(../img/icon3.png);}
+.cont1 ul .icon4 a:before{width: 36px; background-image: url(../img/icon4.png);}
+.cont1 ul .icon5 a:before{width: 41px; background-image: url(../img/icon5.png);}
+.cont1 ul .icon6 a:before{width: 45px; background-image: url(../img/icon6.png);}
+/* 마우스 하버 회전 */
+.cont1 ul li:hover a:before{transform:rotateY(360deg);}
+
+/* 콘텐츠2 일정 공지사항 팝업존 영역*/
+.cont2{margin-bottom: 60px;}
+.cont2>div{float: left; height: 260px; margin-right: 15px;}
+.cont2 .schd{width: 406px; height: 260px;
+                position: relative;
+                border: 1px solid #ddd;}
+
+.cont2 .schd h3{margin-left: 15px;font-size: 18px; 
+                    line-height: 48px; font-weight: 500;}
+.cont2 .sList{position: absolute; top: 17px; right: 15px;}
+.cont2 .sList li{float: left; margin-right: 10px; font-size: 13px;}
+                        
+.cont2 .sList li span{width: 9px; height: 9px; 
+                                display: inline-block;
+                                margin-right: 9px;
+                                border-radius: 20px; background: #ff3535;}
+.cont2 .sList .red span{}
+.cont2 .sList .blue span{background: #5e5eff;}
+.cont2 .sList .yellow span{border: 2px solid #ffda2c;
+                                        width: 7px; height: 7px; background: #fff;}
+/* 왼쪽 month 월 영역 */
+.cont2 .left{width: 163px; height: 212px; float: left;
+              background: #5e5eff; text-align: center;}
+.cont2 .left .month{text-align: center; color: #fff; 
+                      position: relative; padding: 40px 0;}
+.cont2 .left .month .tit{font-size: 38px; font-weight: 500; line-height: 1em;}
+.cont2 .left .month .tit span{display: block; font-size: 18px;}
+/* 이전 다음 버튼 */
+.cont2 .left .month a{position: absolute; top: 90px; display: block;
+    width: 11px; height: 18px;
+    text-indent: -9999px; background-repeat: no-repeat;}
+.cont2 .left .month .pre{left: 10px; background-image: url(../img/schPre.png);}
+.cont2 .left .month .next{right: 10px; background-image: url(../img/schNext.png);}
+/* 일정 더보기 */
+.cont2 .left .more{font-size: 13px; color: #fff; opacity: 0.8;}
+
+/* 오른쪽 달력 영역 */
+.cont2 .right{width: 243px; height: 212px; float: right; box-sizing: border-box;
+                padding: 15px; font-size: 13px; text-align: center;
+                border-top: 1px solid #ddd;}
+.cont2 .right .week li{font-weight: 500;}
+.cont2 .right li{display: inline-block; width: 13%;
+                   line-height: 21px; margin-bottom: 8px;}
+.cont2 .right .day span{display: inline-block; width: 21px; height: 21px;
+                              border-radius: 21px;  color: #666;}
+.cont2 .right .red span{background: #ff3535; color: #fff;}
+.cont2 .right .blue span{background: #5e5eff; color: #fff;}
+.cont2 .right .yellow span{border: 2px solid #ffda2c;}
+
+/* 탭메뉴 영역 */
+.cont2 .notice{width: 449px; height: 260px; border: 1px solid #ddd;}
+.cont2 .tabMenu{border-bottom: 1px solid #ddd;}        
+.cont2 .tabMenu li{float: left;}
+.cont2 .tabMenu li a{font-size: 18px; font-weight: 500; position: relative;
+                          padding: 12px 15px; line-height: 48px;}
+.cont2 .tabMenu li a:after{content: ""; position: absolute; left: 0; bottom: 0; 
+                                    width: 0; height: 3px; background: #3834cb;
+                                    transition: all 0.3s;}
+
+.cont2 .tabMenu .more{float: right; width: 30px; height: 30px; 
+                              text-indent: -9999px; margin: 9px 14px;
+                              background: url(../img/more1.png) no-repeat center;}
+.cont2 .tabCont{position: relative;}
+.cont2 .tabCont .tab1{}
+.cont2 .tabCont .tab2{display: block;}
+.cont2 .tabCont .tab3{}
+.cont2 .tabCont ul{width: 449px; position: absolute; top: 0; left: 0;}
+.cont2 .tabCont li{padding: 15px; border-bottom: 1px dotted #ddd;}
+.cont2 .tabCont li:last-child{border-bottom: none;}
+.cont2 .tabCont li span{display: block; font-size: 13px; color: #666;}
+.cont2 .tabCont li .date{display: inline-block; float: right;}
+/* 마우스 하버시 */
+.cont2 .tabMenu li:hover a{color:#3834cb;}
+.cont2 .tabMenu li:hover a:after{width: 100%;}
+/* 팝업배너 영역 */
+.cont2 .popup{width: 309px; height: 260px; border: 1px solid #ddd; 
+                  overflow: hidden; margin-right: 0; position: relative;}
+.cont2 .popup .btn{position: absolute; top: -1px; right: 0;}
+.cont2 .popup .btn a{display: inline-block; margin-right: -5px; width: 36px; height: 36px;
+                           text-indent: -9999px; background-repeat: no-repeat;}
+.cont2 .popup .btn .pre{background-image: url(../img/btnL.png);}
+.cont2 .popup .btn .next{background-image: url(../img/btnR.png);}
 /* 푸터 영역 */
 #footer{}

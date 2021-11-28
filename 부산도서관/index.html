@@ -7,7 +7,6 @@
     <title>부산도서관</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
-    <script src="script/main.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -104,25 +103,168 @@
             <div class="search">
                 <form>
                     <fieldset>
-                        <legend>자료검색</legend>
+                        <legend>도서검색</legend>
                         <div class="selectBox">
                             <select>
-                                <option value="TOTAL">통합자료검색</option>
-                                <option value="NAME">저자명</option>
-                                <option value="BOOK">도서명</option>
+                                <option value="total">통합자료검색</option>
+                                <option value="name">저자명</option>
+                                <option value="book">도서명</option>
                             </select>
                         </div><!--selectBox-->
                         <div class="wordBox">
-                            <label>검색어를 입력하세요.</label>
-                            <input type="text" style="color:#666;">
+                            <input type="text" placeholder="검색어를 입력하세요." style="color:#666;">
                         </div><!--wordBox-->
                         <a href="#" class="schBtn">검색</a>
                     </fieldset>
                 </form>
             </div><!--search-->
-        </div><!--mainVisual-->
-        <div id="container"></div><!--container-->
-        <footer id="footer"></footer><!--footer-->
+        </div><!--#mainVisual-->
+        <div id="container">
+            <div class="inner">
+                <div class="cont1"><!--quickMenu-->
+                    <ul class="cf">
+                        <li class="icon1"><a href="#"></a><span>이용안내</span></li>
+                        <li class="icon2"><a href="#"></a><span>행사신청</span></li>
+                        <li class="icon3"><a href="#"></a><span>비치희망도서</span></li>
+                        <li class="icon4"><a href="#"></a><span>기증·납본</span></li>
+                        <li class="icon5"><a href="#"></a><span>도서관견학</span></li>
+                        <li class="icon6"><a href="#"></a><span>부산자료</span></li>
+                    </ul>
+                </div><!--.cont1-->
+                <div class="cont2 cf">
+                    <div class="schd">
+                        <h3>도서관 일정</h3>
+                        <ul class="sList cf">
+                            <li class="red"><span></span>휴관</li>
+                            <li class="blue"><span></span>행사</li>
+                            <li class="yellow"><span></span>일정</li>
+                        </ul>
+                        <div class="left">
+                            <div class="month">
+                                <a href="#" class="pre">이전</a>
+                                <p class="tit"><span>2021</span>11월</p><!--tit-->
+                                <a href="#" class="next"></a>
+                            </div><!--date-->
+                            <a href="#" class="more">일정 더보기</a>
+                        </div><!--left-->
+                        <div class="right">
+                                <ul class="week">
+                                    <li>일</li>
+                                    <li>월</li>
+                                    <li>화</li>
+                                    <li>수</li>
+                                    <li>목</li>
+                                    <li>금</li>
+                                    <li>토</li>
+                                </ul><!--week-->
+                                <ul class="day">
+                                    <li><span></span></li>
+                                    <li class="red"><span>1</span></li>
+                                    <li><span>2</span></li>
+                                    <li class="blue"><span>3</span></li>
+                                    <li><span>4</span></li>
+                                    <li  class="blue"><span>5</span></li>
+                                    <li><span>6</span></li>
+                                </ul><!--day-->
+                                <ul class="day">
+                                    <li><span>7</span></li>
+                                    <li  class="red"><span>8</span></li>
+                                    <li><span>9</span></li>
+                                    <li class="blue"><span>10</span></li>
+                                    <li><span>11</span></li>
+                                    <li><span>12</span></li>
+                                    <li><span>13</span></li>
+                                </ul><!--day-->
+                                <ul class="day">
+                                    <li><span>14</span></li>
+                                    <li><span>15</span></li>
+                                    <li><span>16</span></li>
+                                    <li class="blue"><span>17</span></li>
+                                    <li><span>18</span></li>
+                                    <li class="blue"><span>19</span></li>
+                                    <li><span>20</span></li>
+                                </ul><!--day-->
+                                <ul class="day">
+                                    <li><span>21</span></li>
+                                    <li  class="red"><span>22</span></li>
+                                    <li class="blue yellow"><span>23</span></li>
+                                    <li><span>24</span></li>
+                                    <li><span>25</span></li>
+                                    <li><span>26</span></li>
+                                    <li><span>27</span></li>
+                                </ul><!--day-->
+                                <ul class="day">
+                                    <li><span>28</span></li>
+                                    <li class="red"><span>29</span></li>
+                                    <li><span>30</span></li>
+                                    <li><span></span></li>
+                                    <li><span></span></li>
+                                    <li><span></span></li>
+                                    <li><span></span></li>
+                                </ul><!--day-->
+                        </div><!--right-->
+                    </div><!--schedule-->
+                    <div class="notice">
+                        <div class="tabMenu">
+                            <ul class="cf">
+                               <a href="#"  class="more">더보기</a>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">문화행사</a></li>
+                                <li><a href="#">강좌안내</a></li>
+                            </ul>
+                        </div><!--tabMenu-->
+                        <div class="tabCont">
+                            <ul class="tab1">
+                                <li>
+                                    <a href="#">2021년 연속 간행물 이용 만족도 설문조사 실시</a>
+                                    <span class="date">2021-11-23</span>
+                                    <span>2022년 연속 간행물 구독 계획 수립을 위해 이용자분들...</span>
+                                </li>
+                                <li>
+                                    <a href="#">[대한민국 도서관 한마당] 행사 안내</a>
+                                    <span class="date">2021-11-19</span>
+                                    <span>한마당행사멘트</span>
+                                </li>
+                                <li>
+                                    <a href="#">2021년 희망도서 신청 마감기한 안내</a>
+                                    <span class="date">2021-11-18</span>
+                                    <span>※마감일 이후 신청 도서는 ‘22년 1월부터 순차적으로 제’...</span>
+                                </li>
+                            </ul>
+                            <ul class="tab2">
+                                <li>
+                                    <a href="#">2021년 연속 간행물 이용 만족도 설문조사 실시</a>
+                                    <span class="date">2021-11-23</span>
+                                    <span>2022년 연속 간행물 구독 계획 수립을 위해 이용자분들...</span>
+                                </li>
+                                <li>
+                                    <a href="#">[대한민국 도서관 한마당] 행사 안내</a>
+                                    <span class="date">2021-11-19</span>
+                                    <span>한마당행사멘트</span>
+                                </li>
+                                <li>
+                                    <a href="#">2021년 희망도서 신청 마감기한 안내</a>
+                                    <span class="date">2021-11-18</span>
+                                    <span>※마감일 이후 신청 도서는 ‘22년 1월부터 순차적으로 제’...</span>
+                                </li>
+                            </ul>
+                        </div><!--tabMenu-->
+                    </div><!--notice-->
+                    <div class="popup">
+                        <div><img src="img/popup.jpg" alt="팝업배너"></div>
+                        <div><img src="img/popup.jpg" alt="팝업배너"></div>
+                        <div class="btn">
+                            <a href="#" class="pre">이전</a>
+                            <a href="#" class="next">다음</a>
+                        </div><!--btn-->
+                    </div><!--popup-->
+                </div><!--.cont2-->
+                <div class="cont3"></div><!--.cont3-->
+                <div class="cont4"></div><!--.cont4-->
+                <div class="cont5"></div><!--.cont5-->
+        </div><!--.inner-->
+        </div><!--#container-->
+        <footer id="footer"></footer><!--#footer-->
     </div><!--#wrap-->
 </body>
 </html>

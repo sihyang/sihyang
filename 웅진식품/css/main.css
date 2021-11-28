@@ -4,29 +4,35 @@
 #wrap .inner{width: 1200px; margin: 0 auto; position: relative;}
 
 /* 헤더영역 */
-/* #header{width: 100%; height: 133px;} */
 #hTop .inner{}
 /* hTop 유틸영역 */
-.hTop{height: 40px; border-bottom: 1px solid #ddd;}
+.hTop{height: 40px; border-bottom: 1px solid #ddd; 
+        position: relative; z-index: 100;}
 .hTop .utill{position: absolute; top: 8px; right: 0;}
 .hTop .utill a{font-size: 14px; line-height: 25px;}
-.hTop .utill>div{display: inline-block;}
-.hTop .utill .ulist .eshop{display: inline-block; text-indent:-9999px; 
+/* .hTop .utill>div{display: inline-block;} */
+.hTop .utill .ulist{float: left;}
+.hTop .utill .ulist p{float: left; margin-right: 23px;}
+.hTop .utill .ulist .eshop{display: block; text-indent:-9999px; 
     width: 65px; height: 25px;
     background: url(../img/eshop.png) no-repeat;}
-.hTop .utill .ulist a{margin-right: 23px;}
+/* .hTop .utill .ulist a{margin-right: 23px;} */
 
 /* 언어영역 */
 .hTop .utill .lang{width: 100px; padding: 0 10px; position: relative;
-    background: url(../img/lanBtn.png) no-repeat right 10px center; cursor: pointer;}
-.hTop .utill .lang .list{position: absolute; top: 32px; left: 0; width: 120px; height: 123px;
-    background: #fff; border-radius: 0 0 6px 6px; overflow: hidden;
-border: 1px solid #ddd; border-top: none; z-index: 25; opacity: 0; transition: all 0.4s}
+                     float: left; background: #ccc;}
+
+.hTop .utill .lang .btn{display: block; background: #fcc url(../img/lanBtn.png) no-repeat right 10px center;}                
+
+.hTop .utill .lang .list{position: absolute; top: 32px; left: 0; 
+                          width: 120px; height: 123px;
+                          background: #fff; border-radius: 0 0 6px 6px; overflow: hidden;
+                          border: 1px solid #ddd; border-top: none; display: none;}
 
 .hTop .utill .lang .list li a{display: block; padding: 8px 10px;}
 /* 마우스 하버 */
 .hTop .utill .ulist:hover .eshop{background: url(../img/eshop_on.png);}
-.hTop .utill .lang:hover .list{opacity: 1;}
+.hTop .utill .lang:hover .list{display: block;}
 .hTop .utill .lang .list li:hover a{background: #eee;}
 
 /* hBotoom gnb영역 */
