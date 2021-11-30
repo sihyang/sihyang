@@ -8,7 +8,7 @@
 .hTop .utill{width: 1200px; margin: 0 auto;}
 /* 유틸 left */
 .hTop .left{float: left;}
-.hTop .left li{display: inline-block; border-right: 1px dotted #bbb; 
+.hTop .left li{display: inline-block; border-right: 1px dotted #bbb;
     margin-right: 15px; padding-right: 15px;}
 .hTop .left li:first-child{border-left: 1px dotted #bbb; padding-left: 15px;}
 /* 유틸 right */
@@ -46,13 +46,13 @@
 .gnb .subMenu li:hover a:before{width: 100%;}
 /* 서브배경 영역 */
 .subBg{width: 100%; height: 360px; background:#fff; display: none;
-    border-top: 1px solid #666; border-bottom: 1px solid #666;} 
-.subBg::before{display: block; content: ""; position: absolute;
-                   top: 119px; left: 359px; width: 238px; height: 100%;
+    border-top: 1px solid #666; border-bottom: 1px solid #666;}
+.subBg:before{display: block; content: ""; position: absolute;
+                   top: 119px; left: 359px; width: 231px; height: 100%;
                    background: url(../img/clock.jpg) no-repeat;}
 
 /* 메인비주얼 영역 */
-#mainVisual{width: 100%; height: 450px; position: relative;}
+#mainVisual{width: 100%; height: 450px; overflow: hidden; position: relative;}
 /* 검색창 영역 */
 .search{position: absolute; bottom: 106px; left: 360px;}
 fieldset{overflow: hidden; position:relative;
@@ -97,7 +97,7 @@ legend{overflow: hidden; position: absolute; top: 0; left: 0;}
 #container .inner{position: relative; width: 1200px; margin: 0 auto;}
 /* 콘텐츠1 퀵메뉴 영역 */
 .cont1{width: 1200px; height: 140px; margin-top: -100px;
-    background: #fff; z-index: 100;
+    background: #fff; z-index: 50;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
     margin-bottom: 60px;}
 .cont1 ul{}
@@ -181,7 +181,11 @@ legend{overflow: hidden; position: absolute; top: 0; left: 0;}
 
 .cont2 .tabMenu .more{float: right; width: 30px; height: 30px; 
                               text-indent: -9999px; margin: 9px 14px;
-                              background: url(../img/more1.png) no-repeat center;}
+                              background: url(../img/more1.png) no-repeat center;} 
+ /* 마우스 하버시 */
+.cont2 .tabMenu li:hover a{color:#3834cb;}
+.cont2 .tabMenu li:hover a:after{width: 100%;}
+/* 탭 콘텐츠 영역 */                         
 .cont2 .tabCont{position: relative;}
 .cont2 .tabCont .tab1{}
 .cont2 .tabCont .tab2{display: block;}
@@ -191,9 +195,6 @@ legend{overflow: hidden; position: absolute; top: 0; left: 0;}
 .cont2 .tabCont li:last-child{border-bottom: none;}
 .cont2 .tabCont li span{display: block; font-size: 13px; color: #666;}
 .cont2 .tabCont li .date{display: inline-block; float: right;}
-/* 마우스 하버시 */
-.cont2 .tabMenu li:hover a{color:#3834cb;}
-.cont2 .tabMenu li:hover a:after{width: 100%;}
 /* 팝업배너 영역 */
 .cont2 .popup{width: 309px; height: 260px; border: 1px solid #ddd; 
                   overflow: hidden; margin-right: 0; position: relative;}
@@ -202,5 +203,132 @@ legend{overflow: hidden; position: absolute; top: 0; left: 0;}
                            text-indent: -9999px; background-repeat: no-repeat;}
 .cont2 .popup .btn .pre{background-image: url(../img/btnL.png);}
 .cont2 .popup .btn .next{background-image: url(../img/btnR.png);}
+/* 콘텐츠3 추천도서 영역 */
+.cont3{position: relative; width: 1200px; height: 430px; margin-bottom: 80px;}
+/* 탭메뉴 영역 */
+.cont3 .bookMenu ul{position: absolute; top: 0; left: 50%; 
+                        transform: translateX(-50%);}
+.cont3 .bookMenu li:nth-child(2){margin-left: -1px; margin-right: -1px;}
+.cont3 .bookMenu li{float: left; width: 180px; height: 45px; line-height: 43px; 
+                           text-align: center; border: 1px solid #ddd; box-sizing: border-box;}
+.cont3 .bookMenu li a{font-size: 18px; padding: 9px 30px;}
+.cont3 .bookMenu .active{background: #5e5eff; border: none;}
+.cont3 .bookMenu .active a{color: #fff;}
+/* 탭메뉴 버튼 영역 */
+.cont3 .bookMenu .btn{position: absolute; top: 0; right: 0;}
+.cont3 .bookMenu .btn a{display: inline-block; width: 45px; height: 45px;
+                                text-indent: -9999px; margin-left: -5px;
+                                 background-repeat: no-repeat;}
+.cont3 .bookMenu .btn .pre{background-image: url(../img/bpre.png);}
+.cont3 .bookMenu .btn .next{background-image: url(../img/bnext.png);}
+.cont3 .bookMenu .btn .more{background-image: url(../img/bmore.png);}
+/* 탭 콘텐츠 영역*/
+.cont3 .bookList{position: relative; top: 110px; left: 0; text-align: center;}
+.cont3 .bookList li{float: left; margin-right: 20px;}
+.cont3 .bookList li:last-child{margin-right: 0;}
+.cont3 .bookList .photo{width: 180px; height: 260px; border: 1px solid #ddd;}
+.cont3 .bookList .tit{font-weight: 500; margin: 12px 0 7px 0;}
+.cont3 .bookList .name{font-size: 14px; color: #666;}
+/* 추천도서 */
+.cont3 .bookList .recom{position: absolute; top: 0; left: 0;}
+/* 새로 들어온 책 */
+.cont3 .bookList .new{position: absolute; top: 0; left: 0; z-index: 100;}
+/* 베스트 도서 */
+.cont3 .bookList .best{position: absolute; top: 0; left: 0;}
+
+/* 콘텐츠4 큐레이션 영역 */
+.cont4{margin-bottom: 80px; height: 166px;}
+.cont4 .info{float: left; margin-top: 46px;;}
+.cont4 .info .tit{font-size: 22px; line-height: 1em;}
+.cont4 .info .txt{color: #666; margin-top: 18px;}
+/* 이미지 영역 */
+.cont4 .photo{float: right;}
+.cont4 .photo li{float: left; margin-right: 20px; position: relative;}
+.cont4 .photo li:last-child{margin-right: 0;}
+.cont4 .photo li span{display: block; position: absolute; top: 0; left: 0;
+                            width: 166px; height: 166px; border-radius: 50%;
+                            background: rgba(0, 0, 0, 0.8); color: #fff;
+                            font-size: 18px; font-weight: 500;
+                            line-height: 166px; text-align: center;
+                            opacity: 0; transition: all 0.3s;}
+/* 마우스 하버시 */
+.cont4 .photo li:hover span{opacity: 1;}
+
+/* 콘텐츠5 영역 */
+.cont5{height: 250px; margin-bottom: 100px;}
+.cont5>div{float: left; margin-right: 14px;}
+/* 온라인 영역 */
+.cont5 .online{width: 383px; height: 250px;}
+/* 영화상영 영역 */
+.cont5 .movie{width: 319px; height: 250px; border: 1px solid #ddd;}
+.cont5 .movie .tit{height: 48px; border-bottom: 1px solid #ddd;}
+.cont5 .movie .tit h3{float: left; font-size: 18px; font-weight: 500; 
+                           line-height: 48px; margin-left: 15px;}
+.cont5 .movie .tit .more{display: block; float: right; text-indent: -9999px;
+                               width: 13px; height: 13px; padding: 17.5px 15px;
+                               background: url(../img/more1.png) no-repeat center;}
+.cont5 .movie .mcont{height: 202px; position: relative;}
+.cont5 .movie .photo{margin: 14px;}
+.cont5 .movie .info{position: absolute; top: 10px; right: 14px;}
+.cont5 .movie .info .name{font-weight: 500; margin-bottom: 10px;}
+.cont5 .movie .info .txt{font-size: 14px; color: #666; line-height: 24px;}
+/* 시설안내 영역 */
+.cont5 .place{margin-right: 0; width: 468px; height: 250px; position: relative;}
+.cont5 .place .photo{}
+.cont5 .place .photo img{width: 468px; height: 250px; overflow: hidden;}
+.cont5 .place .photo .txt{width: 468px; height: 250px; 
+                                position: absolute; top: 0; left: 0;
+                                background: rgba(0, 0, 0, 0.5);
+                                display: none; cursor: pointer;}
+.cont5 .place .photo .txt .tit{font-size: 22px; font-weight: 500; color: #ffda2c; 
+                                    margin-top: 100px; margin-left: 35px;}
+.cont5 .place .photo .txt p{color: #fff; margin-top: 10px; margin-left: 35px;}
+
+.cont5 .place .photo .ph1{}
+.cont5 .place .photo .ph2{position: absolute; top: 0; left: 0;}
+/* 마우스 하버 */
+.cont5 .place .photo:hover .txt{display: block;}
+
+/* 버튼영역 */
+.cont5 .place .btn{position: absolute; top: -1px; right: 5px;}
+.cont5 .place .btn a{display: inline-block; margin-right: -5px; width: 36px; height: 36px;
+                           text-indent: -9999px; background-repeat: no-repeat;}
+.cont5 .place .btn .pre{background-image: url(../img/btnL.png);}
+.cont5 .place .btn .next{background-image: url(../img/btnR.png);}
 /* 푸터 영역 */
-#footer{}
+#footer{width: 100%; height: 275px; background: #333;}
+/* fTop 영역 */
+.fTop{width: 100%; height: 45px; border-bottom: 1px solid #666;}
+.fTop .inner{width: 1200px; height: 45px; margin: 0 auto; border-right: 1px solid #666;}
+/* 왼쪽 메뉴영역 */
+.fTop .fmenu{float: left}
+.fTop .fmenu li{float: left; margin-right: 30px; line-height: 45px;}
+.fTop .fmenu li a{font-size: 14px; color: #ddd;}
+.fTop .fmenu li.on a{color: #ffda2c;}
+/* 오른쪽 사이트 영역 */
+.fTop .fsite{float: right;}
+.fTop .fsite>div{float: left;  position: relative;}
+.fTop .fsite button{width: 200px; height: 45px; background: none;
+                        border: 0; border-left: 1px solid #666;
+                        position: relative; cursor: pointer;}
+.fTop .fsite button::after{width: 14px; height: 9px; content: "";
+                            position: absolute; top: 17px; right: 10px;
+                            background: url(../img/fBtn.png) no-repeat;}
+.fTop .fsite button span{font-size: 14px; color: #ddd; 
+                               position: absolute; top: 14px; left: 10px;}
+.fTop .fsite .wrap{}
+.fTop .fsite .wrap ul li{width: 200px; height: 35px; line-height: 35px; background: #fff;}
+.fTop .fsite .wrap li a{margin-left: 10px;}
+.fTop .fsite .wrap ul li:hover{background: #ddd;}
+/* 드롭다운 메뉴 */
+.fTop .fsite .site1 .wrap{display: none;}
+.fTop .fsite .site2 .wrap{display: none;}
+
+/* fbttom 영역 */
+.fbttom{}
+.fbttom .inner{width: 1200px; margin: 30px auto;}
+.fbttom .flogo{float: left;}
+.fbttom .finfo{float: left; font-size: 13px; color: #666; margin-left: 150px;}
+.fbttom .fsns{float: right;}
+.fbttom .fsns a{margin-left: 20px; opacity: 0.4; transition: all 0.6s;}
+.fbttom .fsns a:hover{opacity: 1;}
