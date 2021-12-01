@@ -1,0 +1,18 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+*{margin:0; padding:0;}
+body{font-size: 16px; line-height: 1.3em; font-family: 'Noto Sans KR', sans-serif; letter-spacing: -0.5px;}
+/* 
+시스템 폰트 vs 웹폰트
+- 폰트 설정시, 한, 중, 일 포함일 경우, 시스템 폰트는 사용하지 않는 것이 좋음
+(마이크로소프트엣지, 파이어폭스 브라우저 문제 발생)
+
+보통 폰트 크기는 웹사이트 폰트보다 크게 지정하는 편임 (14px 또는 16px)
+ */
+
+a{text-decoration: none; color: #333;}
+ul, ol, li{list-style: none;}
+img{vertical-align: top; border: none;}
+address{font-style: normal;} /*기본 기울임*/
+
+.cf::after{display: block; content:""; clear: both;}

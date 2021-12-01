@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+#wrap{width: 100%; min-width: 320px;}
+/* 헤더영역 */
+#header{width: 100%; height: 50px; background: #fff; position: relative;}
+.logo{width: 145px; margin: 0 auto;}
+.logo a{display: block; width: 145px; height: 50px; text-indent: -9999px;
+          background-image: url(../img/logo.png);
+          background-repeat: no-repeat;
+         background-position: 0 center;
+        background-size: auto 32px;}
+/* 사이드 메뉴 버튼 */
+.btnMenu{display: block; width: 20px; height: 16px;
+             padding: 17px 15px; position: absolute; top: 0; right: 0;}
+.btnMenu span{display: block; text-indent: -9999px;
+                    width: 20px; height: 2px;
+                    background: #ffe5e8; margin: 5px 0;}
+.btnMenu:before, .btnMenu:after{content: ""; display: block; 
+                         width: 20px; height: 2px; background: #ffe5e8;}
+/* 검색 아이콘 */
+.btnSearch{display: block; text-indent: -9999px;
+              width: 50px; height: 50px;
+             background-image: url(../img/search.png);
+             background-repeat: no-repeat;
+            background-size: auto 19px;
+            background-position: center;
+            position: absolute; top: 0; right: 35px;}
+
+/* 메인슬라이더 영역 */
+#mainSlider{margin-bottom: 55px;}
+.swiper{width: 100%; height: 100%;}
+.swiper-slide img {display: block; width: 100%; height: 100%; object-fit: cover;}
+.swiper-pagination{width: 58px; height: 28px; border-radius: 28px;
+                        background: rgba(0, 0, 0, 0.6); color: #fff;
+                        margin-left: 86%;}
+.swiper-pagination span{font-size: 14px; line-height: 28px; color: #fff;}
+
+/* 컨테이너 영역 */
+#container{}
+#container h2{font-size: 22px; font-weight: 500; text-align: center; line-height: 1em;}
+#container p{font-size: 14px; text-align: center; margin-top: 8px; margin-bottom: 4.4%;}
+/* 자세히 보기 공통영역 */
+#container .more{width: 130px; height: 38px; border: 1px solid #999; margin: 30px auto;}
+#container .more a{display: block; padding: 9px; font-size: 14px; text-align: center; transition: all 0.3s;}
+#container .more:hover a{background: #333; color: #fff;}
+
+/* 컨텐츠1 BEST NEW 영역 */
+.cont1{width: 92%; margin: 20px; overflow: hidden;}
+.cont1 .best{margin-bottom: 55px;}
+.cont1 ul{margin-top: 5%;}
+.cont1 li{width: 47.5%; float: left; margin-bottom: 4.4%;}
+.cont1 li:nth-child(odd){margin-right: 4%;} /*odd = 홀수선택자*/
+.cont1 li .photo img{width: 100%; height: auto; 
+                           border: 1px solid #ddd; margin-bottom: 4.4%;}
+.cont1 .info{text-align: center;}
+.cont1 .info .name{margin-bottom: 2%;}
+.cont1 .info .price p{display: inline-block; font-size: 18px; 
+    font-weight: 500; margin: 0 5px 10px 0;}
+.cont1 .info .price .origin{font-size: 15px; font-weight: 400; 
+    color: #ffb7bf; text-decoration: line-through;}
+
+.cont1 .tag>p{display: inline-block; width: 40px; height: 20px;
+    font-size: 11px; text-align: center; color: #fff; }
+.cont1 .tag .htg{background: #f9bb86;}
+.cont1 .tag .btg{background: #b2c6e1;}
+
+/* 컨텐츠2 동영상 영역*/
+.cont2{width: 92%; margin: 20px 20px 55px; overflow: hidden;}
+iframe{width: 100%; height: 250px; overflow: hidden;}
+
+/* 컨텐츠3 이벤트 영역*/
+.cont3{width: 100%; height: 100%; margin-bottom: 55px;}
+.cont3 .look1 img{width: 96%; height: auto; margin-left: 20px;}
+.cont3 .look2 img{width: 96%; height: auto;}
+.cont3 .photo{margin-bottom: 20px;}
+
+/* 컨텐츠4 리뷰 영역*/
+.cont4{width: 100%; height: 100%; background: #ffe5e8; 
+        padding: 30px 0 10px 0; margin-bottom: 55px;}
+.cont4 .review{margin: 20px;}
+.cont4 .review ul li{float: left; width: 47.5%; float: left; margin-right: 4%; background: #fff;}
+.cont4 .review ul li:last-child{margin-right: 0;}
+.cont4 .review .photo img{width: 100%; height: auto;}
+.cont4 .review .info{padding: 0 10px;}
+.cont4 .review .info .name{margin-bottom: 15px; font-weight: 500;}
+.cont4 .review .info .txt{font-size:13px; margin-bottom: 15px;}
+.cont4 .review .info .user{font-size: 13px; float: right;}
+
+/* 컨텐츠5 SNS 영역*/
+.cont5{width: 92%; margin: 0 20px 55px; overflow: hidden;}
+.cont5 .sns{margin-top: 4.4%;}
+.cont5 .sns li{width: 31.5%; float: left; margin-right: 2.4%; margin-bottom: 2.4%;}
+.cont5 .sns .none{margin-right: 0;} 
+.cont5 .sns img{width: 100%; height: auto;}
+
+/* 푸터 영역*/
+#footer{height: 300px; background: #333; text-align: center; 
+    font-size: 14px; padding: 20px; color: #777;}
+/* 푸터 메뉴 영역 */
+.fmenu{}
+.fmenu a{color: #777; padding: 0 3px;}
+/* 푸터 SNS 영역 */
+.fsns{}
+.fsns a{display: inline-block; width: 23px; height: 23px;
+        text-indent: -9999px; margin: 20px 5px; opacity: 0.6;
+         background-repeat: no-repeat; 
+         background-size: 23px 23px;}
+.fsns .s1{background-image: url(../img/ytube.png);}
+.fsns .s2{background-image: url(../img/insta.png);}
+.fsns .s3{background-image: url(../img/blog.png);}
+.fsns .s4{background-image: url(../img/face.png);}
+.fsns .s5{background-image: url(../img/kakao.png);}
+.fcs{margin-bottom: 20px;}
+.finfo{margin-bottom: 20px;}
+
+/* 사이드 메뉴 bg */
+.blackBg{width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); 
+    position: fixed; top: 0; right: 0; z-index: 100; display: none;}
+/* 사이드 메뉴 */
+.sideMn{width: 350px; height: 100%; background: #fff;
+    position: fixed; top: 0; right: -350px; z-index: 300;}
+.sideMn .sideTop{height: 50px; border-bottom: 1px solid #ddd;}
+/* 닫기 버튼 */
+.sideMn .btnClose{display: block; text-indent: -9999px;
+width: 50px; height: 50px;;
+background-image:url(../img/m_sidebtn.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: auto 18px;
+position: absolute; top: 0; right: 0;
+transition: all 0.8s;}
+.sideMn .btnClose:hover{transform: rotate(360deg);}
+
+ /* CSS 아코디언 메뉴*/
+ .nav{overflow: hidden;}
+ .btn{display: block; padding: 18px 20px; font-size: 18px;
+     background-color: #fff; color: #444; position: relative;
+     border-bottom: 1px solid #c8c8c8;}
+
+ .subMenu{background: #fafafa; overflow: hidden; transition: max-height 0.7s; max-height: 0;}
+ .subMenu a{display: block; padding: 15px 20px; color: #555;
+                 font-size: 14px; border-bottom: 1px solid #eee; position: relative;}
+ .subMenu a:after{content: ''; opacity: 0; transition: opacity 0.3s;}
+ .subMenu a:hover{background: #eee; transition: all 0.3s; border-bottom: 1px solid #c8c8c8;}
+ .nav:target .subMenu{max-height: 20em;}
+
+.sideMn .utill{position: absolute; left: 0; right: 0; bottom: 0;}
+.sideMn .utill a{color: #fff; float: left; width: 50%; padding: 12px 25px;
+                    border-right: 1px solid #777; font-weight: 300;
+                    background: #333; box-sizing: border-box; text-align: center;}
