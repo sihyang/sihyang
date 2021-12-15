@@ -1,0 +1,9 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+*{margin:0; padding:0;}
+body{font-size: 16px; line-height: 20px; font-family: 'Noto Sans KR', sans-serif;}
+a{text-decoration: none; color: #333;}
+ul, ol{list-style: none;}
+img{vertical-align: top; border: none;}
+address{font-style: normal;} /*기본 기울임*/
+.cf::after{display: block; content:""; clear: both;}}

@@ -1,43 +1,23 @@
 $(document).ready(function(){
 
-    //개별메누
-    $(".gnb>ul>li").mouseover(function(){
+    // 서브메뉴 드롭다운
+    $(".gnb>ul>li").mouseenter(function(){
         $(this).find(".subMenu").stop().slideDown(400);
     });
-    $(".gnb>ul>li").mouseout(function(){
+    $(".gnb>ul>li").mouseleave(function(){
         $(this).find(".subMenu").stop().slideUp(400);
     });
 
-    // 콘텐츠1 다중 슬라이드
-    var slides = document.querySelector('.slides'),
-        slide = document.querySelectorAll('.slides li'),
-        currentIdx = 0,
-        slideCount = slide.length,
-        prevBtn = document.querySelector('.prev'),
-        slideWidth = 284,
-        slideMargin = 21,
-        nextBtn = document.querySelector('.next');
-
-        slides.style.width = (slideWidth + slideMargin)*slideCount - slideMargin + 'px';
-
-        function moveSlide(num){
-            slides.style.left = -num * 305 + 'px';
-            currentIdx = num;
-        }
-        nextBtn.addEventListener('click', function(){
-            if(currentIdx < slideCount - 4){
-                moveSlide(currentIdx + 1);
-                console.log(currentIdx);
-            }else{
-                moveSlide(0);
-            }
-        });
-        prevBtn.addEventListener('click', function(){
-            if(currentIdx > 0){
-                moveSlide(currentIdx - 1);
-            }else{
-                moveSlide(slideCount - 4);
-            }
+    // 메인 슬라이드
+    var swiper = new Swiper(".main", {
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
         });
 
     //상단으로 이동

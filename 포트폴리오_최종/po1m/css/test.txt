@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, 
+    initial-scale=1.0, maximum-scale=1.0, minumum-scale=1.0, width=device-width">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <title>롬앤 rom&nd</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <h1 class="logo"><a href="#">롬앤</h1>
+            <a href="#" class="btnMenu"><span>모바일 사이드 메뉴</span></a><!--btnMenu-->
+            <a href="#" class="btnSearch">검색창 열기</a><!--btnSearch-->
+        </header><!--#header-->
+        <div id="mainSlider">
+             <!-- Swiper -->
+        <div class="swiper Swiper1">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/slide.jpg" alt="글래스팅 워터 글로스"></div>
+            <div class="swiper-slide"><img src="img/slide2.jpg" alt="클리어 커버 쿠션"></div>
+            <div class="swiper-slide"><img src="img/slide3.jpg" alt="베러 댄 치크"></div>
+            </div><!--swiper-wrapper-->
+            <div class="swiper-pagination"></div>
+        </div><!--swiper-->
+        </div><!--#mainSlider-->
+        <div id="container">
+            <div class="cont1">
+                <h3>BEST</h3>
+                <ul class="cf">
+                    <li><a href="#">
+                        <div class="photo"><img src="img/best1.gif" alt="롬앤 쥬시 래스팅 틴트"></div>
+                        <div class="info">
+                            <div class="name">롬앤 쥬시 래스팅 틴트</div><!--name-->
+                            <div class="price">
+                                <p class="origin">13,000원 </p>
+                                <p>8,900원</p>
+                            </div><!--price-->
+                            <div class="tag">
+                                <p class="hit">HIT</p>
+                                <p class="best">BEST</p>
+                            </div>
+                        </div><!--info-->
+                    </a></li>
+                    <li><a href="#">
+                        <div class="photo"><img src="img/best2.gif" alt="롬앤 쥬시 래스팅 틴트"></div>
+                        <div class="info">
+                            <div class="name">롬앤 쥬시 래스팅 틴트</div><!--name-->
+                            <div class="price">
+                                <p class="origin">13,000원 </p>
+                                <p>8,900원</p>
+                            </div><!--price-->
+                            <div class="tag">
+                                <p class="hit">HIT</p>
+                                <p class="best">BEST</p>
+                            </div>
+                        </div><!--info-->
+                    </a></li>
+                    <li><a href="#">
+                        <div class="photo"><img src="img/best3.gif" alt="롬앤 쥬시 래스팅 틴트"></div>
+                        <div class="info">
+                            <div class="name">롬앤 쥬시 래스팅 틴트</div><!--name-->
+                            <div class="price">
+                                <p class="origin">13,000원 </p>
+                                <p>8,900원</p>
+                            </div><!--price-->
+                            <div class="tag">
+                                <p class="hit">HIT</p>
+                                <p class="best">BEST</p>
+                            </div>
+                        </div><!--info-->
+                    </a></li>
+                    <li><a href="#">
+                        <div class="photo"><img src="img/best4.gif" alt="롬앤 쥬시 래스팅 틴트"></div>
+                        <div class="info">
+                            <div class="name">롬앤 쥬시 래스팅 틴트</div><!--name-->
+                            <div class="price">
+                                <p class="origin">13,000원 </p>
+                                <p>8,900원</p>
+                            </div><!--price-->
+                            <div class="tag">
+                                <p class="hit">HIT</p>
+                                <p class="best">BEST</p>
+                            </div>
+                        </div><!--info-->
+                    </a></li>
+                    <li><a href="#">
+                        <div class="photo"><img src="img/best5.gif" alt="롬앤 쥬시 래스팅 틴트"></div>
+                        <div class="info">
+                            <div class="name">롬앤 쥬시 래스팅 틴트</div><!--name-->
+                            <div class="price">
+                                <p class="origin">13,000원 </p>
+                                <p>8,900원</p>
+                            </div><!--price-->
+                            <div class="tag">
+                                <p class="hit">HIT</p>
+                                <p class="best">BEST</p>
+                            </div>
+                        </div><!--info-->
+                    </a></li>
+                    <li><a href="#">
+                        <div class="photo"><img src="img/best6.gif" alt="롬앤 쥬시 래스팅 틴트"></div>
+                        <div class="info">
+                            <div class="name">롬앤 쥬시 래스팅 틴트</div><!--name-->
+                            <div class="price">
+                                <p class="origin">13,000원 </p>
+                                <p>8,900원</p>
+                            </div><!--price-->
+                            <div class="tag">
+                                <p class="hit">HIT</p>
+                                <p class="best">BEST</p>
+                            </div>
+                        </div><!--info-->
+                    </a></li>
+                    <li><a href="#">
+                        <div class="photo"><img src="img/best7.gif" alt="롬앤 쥬시 래스팅 틴트"></div>
+                        <div class="info">
+                            <div class="name">롬앤 쥬시 래스팅 틴트</div><!--name-->
+                            <div class="price">
+                                <p class="origin">13,000원 </p>
+                                <p>8,900원</p>
+                            </div><!--price-->
+                            <div class="tag">
+                                <p class="hit">HIT</p>
+                                <p class="best">BEST</p>
+                            </div>
+                        </div><!--info-->
+                    </a></li>
+                    <li><a href="#">
+                        <div class="photo"><img src="img/best8.gif" alt="롬앤 쥬시 래스팅 틴트"></div>
+                        <div class="info">
+                            <div class="name">롬앤 쥬시 래스팅 틴트</div><!--name-->
+                            <div class="price">
+                                <p class="origin">13,000원 </p>
+                                <p>8,900원</p>
+                            </div><!--price-->
+                            <div class="tag">
+                                <p class="hit">HIT</p>
+                                <p class="best">BEST</p>
+                            </div>
+                        </div><!--info-->
+                    </a></li>
+                </ul>
+            </div><!--best-->
+        </div><!--#container-->
+        <footer id="footer"></footer><!--#footer-->
+    </div><!--#wrap-->
+
+     <!-- Swiper JS -->
+     <script>
+       var swiper = new Swiper(".Swiper1", {
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+         pagination: {
+           el: ".swiper-pagination",
+           type: "fraction",
+         },
+         navigation: {
+           nextEl: ".swiper-button-next",
+           prevEl: ".swiper-button-prev",
+         },
+       });
+     </script>
+
+</body>
+</html>
